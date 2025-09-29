@@ -1,0 +1,122 @@
+.classes-section {
+  width: 100vw;
+  background: #f5f7fa;
+  padding: 128px 0 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.classes-title {
+  font-size: 3rem;
+  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+  color: #253046;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.classes-grid {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.class-card {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.class-img-wrap {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.class-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.class-card-content {
+  padding: 2rem 2rem 1.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.class-card-title {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+  color: #253046;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.class-card-link {
+  color: #253046;
+  font-size: 1rem;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.class-card-link:hover {
+  color: #2e5bff;
+}
+
+.class-card-duration {
+  color: #253046;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.classes-btn-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.classes-btn {
+  background: #253046;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+  padding: 0.8em 2.2em;
+  border-radius: 0;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  transition: background 0.2s;
+}
+
+.classes-btn:hover {
+  background: #2e5bff;
+}
+
+@media (max-width: 1100px) {
+  .classes-grid {
+    gap: 1.2rem;
+  }
+  .class-card {
+    width: 90vw;
+    max-width: 340px;
+  }
+}
+@media (max-width: 700px) {
+  .classes-title {
+    font-size: 2rem;
+  }
+  .class-card-content {
+    padding: 1.2rem 1rem 1rem 1rem;
+  }
+}

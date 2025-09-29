@@ -1,0 +1,121 @@
+.window-section {
+    display: flex;
+    align-items:  flex-end;
+  position: relative;
+  width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 128px;
+  padding-bottom: 0px;
+
+}
+
+.window-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+ /* Rectangle window shifted towards right */
+  -webkit-clip-path: polygon(
+    0 0, 
+    0% 100%, 
+    100% 100%, 
+    100% 0, 
+    0 0,
+    40% 15%,   /* top-left of window */
+    90% 15%,   /* top-right of window */
+    90% 85%,   /* bottom-right of window */
+    40% 85%,   /* bottom-left of window */
+    40% 15%
+  );
+  clip-path: polygon(
+    0 0, 
+    0% 100%, 
+    100% 100%, 
+    100% 0, 
+    0 0,
+    30% 15%,   /* top-left of window */
+    90% 15%,   /* top-right of window */
+    90% 85%,   /* bottom-right of window */
+    30% 85%,   /* bottom-left of window */
+    30% 15%
+  );
+  z-index: 1;
+}
+
+.window-foreground {
+     position: relative;
+    z-index: 2;
+    background: #c6e3e6;
+    max-width: 632px;
+    width: 80vw;
+    min-height: 350px;
+    margin: 64px auto;
+    border-radius: 0;
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3.5rem 3rem 2.5rem 3rem;
+    transform: translate(-61%, 22%);
+}
+
+
+.window-title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+  color: #253046;
+}
+
+.window-subtitle {
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+  color: #253046;
+}
+
+.window-desc {
+  font-size: 1.1rem;
+  margin-bottom: 2.2rem;
+  color: #253046;
+  line-height: 1.6;
+}
+
+.window-btn {
+  display: inline-block;
+  background: #f6ff3e;
+  color: #253046;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+  padding: 0.8em 2.2em;
+  border-radius: 0 0 0 0;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: auto;
+  transition: background 0.2s;
+}
+
+.window-btn:hover {
+  background: #2e5bff;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .window-foreground {
+    width: 96vw;
+    padding: 2.2rem 1.2rem 2rem 1.2rem;
+    min-height: 220px;
+  }
+  .window-title {
+    font-size: 2rem;
+  }
+}

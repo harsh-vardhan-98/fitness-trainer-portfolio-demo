@@ -1,0 +1,21 @@
+/* Theme variables for light/dark mode */
+:root {
+  --color-bg: #fff;
+  --color-text: #181818;
+  --color-primary: #2e5bff;
+  --color-accent: #ffb700;
+  --color-nav-bg: #f8f9fa;
+  --color-section-bg: #f5f7fa;
+  --color-border: #e0e0e0;
+}
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #181a1b;
+    --color-text: #f5f5f5;
+    --color-primary: #ffd166;
+    --color-accent: #4f8cff;
+    --color-nav-bg: #23272a;
+    --color-section-bg: #23272a;
+    --color-border: #333a40;
+  }
+} */
